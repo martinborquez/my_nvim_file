@@ -1,6 +1,8 @@
 set title
 set mouse=a
 set nowrap
+set nocompatible
+set encoding=UTF-8
 
 "identation
 set tabstop=2
@@ -12,3 +14,27 @@ set expandtab
 "correct words
 set spelllang=en,es
 
+
+"vim-plug
+call plug#begin('~/.config/nvim/plugged')
+"theme dracula
+Plug 'dracula/vim', { 'as': 'dracula' }
+"auto pairs
+Plug 'jiangmiao/auto-pairs'
+"Syntax support
+Plug 'sheerun/vim-polyglot'
+"File explorer
+Plug 'scrooloose/NERDTree'    
+"Icons
+Plug 'ryanoasis/vim-devicons'
+"autocomplete
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+
+"theme config
+syntax enable
+colorscheme dracula
+
+"NerdTree
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
