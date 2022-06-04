@@ -3,6 +3,7 @@ set mouse=a
 set nowrap
 set nocompatible
 set encoding=UTF-8
+set relativenumber
 
 "identation
 set tabstop=2
