@@ -30,11 +30,15 @@ Plug 'scrooloose/NERDTree'
 Plug 'ryanoasis/vim-devicons'
 "autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 "theme config
 syntax enable
 colorscheme dracula
+let g:airline_theme = 'dracula'
 
 "NerdTree
 nnoremap <C-n> :NERDTree<CR>
