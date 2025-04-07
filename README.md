@@ -11,4 +11,4 @@ installation
 
 ~install plugins with :PlugInstall in nvim
 
-~install node 14.14.0
+~install node
